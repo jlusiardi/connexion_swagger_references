@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Test
+  description: API description in Markdown.
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:5000/api'
+    description: dev server
+paths:
+  /foo:
+    get:
+      summary: ''
+      description: ''
+      operationId: demo.api.foo
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: 'http://localhost:8080/components.yaml#/components/schemas/Data'
+

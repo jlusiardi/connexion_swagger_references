@@ -1,0 +1,10 @@
+components:
+  schemas:
+    Data:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+
